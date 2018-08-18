@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- title for the dialog showing the error of camera hardware -->
+    <string name="camera_error_title">Camera error</string>
+
+    <!-- message for the dialog showing the error of camera hardware -->
+    <string name="cannot_connect_camera">Cannot connect to camera.</string>
+
+    <!-- Details dialog "OK" button. Dismisses dialog. -->
+    <string name="details_ok">OK</string>
+
+	<string name="app_name">MMD-AR Viewer for Android</string>
+
+    <string name="location">Location</string>
+    <string name="cant_read_folder">folder can\'t be read!</string>
+    <string name="nnew">New</string>
+    <string name="select">Select</string>
+    <string name="file_name">File name:</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Save</string>
+    <string name="no_data">No Data</string>
+    <color name="gray">#ffff0000</color>
+</resources>

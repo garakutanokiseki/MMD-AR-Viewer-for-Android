@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>about</title>
+  </head>
+  <body>
+    <h1>MMD-AR Viewer for Android ver 1.0.1.1<br />
+    </h1>
+    Android
+    端末上で、マーカー型AR（拡張現実）を使用し、MikuMikuDance（MMD）モデルデータをカメラ動画にオーバーレイ表示するソフトウェアです。<br />
+    <h2>動作環境</h2>
+    Android 3.0以降のカメラ付きタブレット機（Tegra2または同等以上のCPUを搭載）を想定しています。<br />おそらく、スマートフォン端末での動作はパフォーマンス的に非常に厳しいはずです。<br />
+    <h3>開発・動作確認環境</h3>
+    Eee Pad Transformer TF101<br />
+    <h2>利用方法</h2>
+    <ol>
+      <li> 開発サイトよりARマーカー画像を<a href="http://sourceforge.jp/projects/mmd-ar-vwr-andr/images?id=2825">こちら</a>からダウンロードし、印刷しておきます。</li>
+      <li>予めAndroid機のローカルストレージ（SDカード等）にMMDモデルデータファイル（*pmd）とモーションファイル
+        （*vmd）をコピーしておいてください。</li>
+      <li>Android機上でMMD-AR Viewerを起動します。</li>
+      <li>初めて起動したときに設定画面が表示されるので、MMDモデルデータファイル（*pmd）とモーションファイル（*vmd）を選択してください。<br />
+        （次回以降、設定画面をメニューから呼び出すことも可能です）<br />
+      </li>
+      <li>ファイルを選択後、設定画面の「Accept」ボタンをタップしてください。メイン画面が表示されます。</li>
+      <li>メイン画面にはカメラ画像が表示されます。１で用意したARマーカーを画面に写してみてください。MMDデータのCGが表示されるはずです。</li>
+    </ol>
+    <br />
+    <h2>開発サイト</h2>
+    sourceforge.jpにMMD-AR Viewer for Android開発サイトを開設しています。<br />
+    <br />
+    URL: <a href="http://sourceforge.jp/projects/mmd-ar-vwr-andr/">http://sourceforge.jp/projects/mmd-ar-vwr-andr/</a><br />
+    <br />
+    ソースの取得などは上記サイトより行ってください。<br />
+    <br />
+    <h2>利用可能なMMDモデルデータファイルについて</h2>
+    <ul>
+      <li>MikuMikuDanceに同梱されているモデルデータについては表示を確認しています</li>
+      <li><a href="http://www6.atwiki.jp/vpvpwiki/pages/216.html">スフィアマップ機能</a>を使用したモデルの読み込みには対応していません</li>
+    </ul>
+    <h2>作成に使用したライブラリやツール類</h2>
+    <ul>
+      <li><a href="http://sourceforge.jp/projects/nyartoolkit-and/" checked="true">NyARToolkit for Android</a><br />
+        Android上で動作するNyARToolkit実装です（Apache Software License, 2.0に基づき配布）</li>
+      <li><a href="http://code.google.com/p/nymmd/">nymmd</a><br />
+        OpenGLを使用したJava版MikuMikuDance再生ライブラリです（GNU GPL v2
+        Licenseに基づき配布&gt;</li>
+      <li><a href="http://code.google.com/p/android-file-dialog/">Android
+          File Dialog</a><br />
+        AndroidのFile Dialog実装ライブラリです（New BSD Licenseに基づき配布）</li>
+      <li><a href="http://www.defaulticon.com/">defaulticon</a><br />アイコン集。（<a href="http://creativecommons.org/licenses/by-nd/3.0/">Creative
+          Commons Attribution-No Derivative Works 3.0</a></li>
+      <li><a style="color: rgb(75, 79, 87); " href="http://flash.tarotaro.org/ar/MarkerGeneratorOnline.html">ARToolKit Marker Generator Online</a><br />
+ARマーカーのオンラインジェネレーター</li>
+    </ul>
+    <h2>現在の制限事項</h2>
+    <ul>
+      <li>本体の電源ボタンを押してスリープ状態に入った場合、スリープ状態から復帰後に画面が固まります。いったんメニューから「Settings」を選択し、その後
+メイン画面へ戻ることで解決します。<br />
+      </li>
+      <li>テクスチャファイルを読み込む際に、イメージサイズ（pix）が2のn乗倍の整数からなる正方形（例：256 pix X 256
+        pix）でない場合には、条件に当てはまるようリサイズした上で読み込みます。そのため、テクスチャ画像のアスペクト比がおかしくなる可能性があります。</li>
+      <li>pmx形式のファイルには対応していません。</li>
+      <li>スフィアマップ機能を使用したモデルの読み込みに対応しましたが、通常のスフィアマップテクスチャは通常のテクスチャとして描画されます。</li>
+      <li>物理演算表示や衝突判定等には対応していません<br />
+      </li>
+      <li>描画更新間隔はモーションデータの長さ、モデルデータの複雑さやプレビュー解像度など、様々な要素に依存します。</li>
+    </ul>
+    <h2>追加・改善を予定している機能</h2>
+    <ul>
+      <li>画面録画機能</li>
+      <li>（可能であれば）描画の高速化<br />
+      <li>エラーハンドリングの充実</li>
+      </li>
+    </ul>
+    <h2>ライセンス</h2>
+    本ソフトは<a href="http://www.gnu.org/copyleft/gpl.html">GNU GPL v3</a>に従って配布します。ライセンス条項の詳細についてはメニューの「License」から表示できます。<br />
+    <br />
+  </body>
+</html>

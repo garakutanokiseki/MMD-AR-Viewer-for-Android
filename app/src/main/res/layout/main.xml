@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+        <FrameLayout android:id="@+id/frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <SurfaceView android:id="@+id/camera_preview"
+                    android:layout_height="fill_parent" android:layout_width="fill_parent"/>
+        </FrameLayout>
+</LinearLayout>

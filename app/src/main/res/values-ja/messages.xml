@@ -1,0 +1,6 @@
+
+    <resources>
+        <string name="example">example</string>
+        <string name="MaxHeapTitle">最大ヒープサイズ不足!</string>
+        <string name="MaxHeapDialog">必要な最大ヒープサイズ: {0} MB. \nこの端末の最大ヒープサイズ設定: {1} MB.</string>
+    </resources>

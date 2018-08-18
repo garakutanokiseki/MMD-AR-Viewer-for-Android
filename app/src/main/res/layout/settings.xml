@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollView1" xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="fill_parent" android:layout_width="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" style="divided" android:scrollbars="vertical">
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout8" android:orientation="vertical" android:layout_marginTop="20sp">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView1" android:layout_height="wrap_content" android:textSize="30sp" android:text="Choose a Model File(*.pmd)" android:layout_width="wrap_content"></TextView>
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout4">
+                <EditText android:editable="false" android:layout_height="80sp" android:textSize="30sp" android:layout_width="match_parent" android:clickable="true" android:layout_weight="1" android:id="@+id/pref_mmdfile_textedit" android:hint="Touch me and choose a pmd file!" android:singleLine="true">
+                    <requestFocus></requestFocus>
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox android:layout_height="wrap_content" android:id="@+id/pref_loadtexture_chk" android:layout_width="wrap_content" android:text="Load Texture files." android:textSize="30sp"></CheckBox>
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout9" android:orientation="vertical" android:layout_marginTop="20sp">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:layout_height="wrap_content" android:textSize="30sp" android:text="Choose a Motion File(*.vmd)" android:layout_width="wrap_content" android:paddingTop="5sp"></TextView>
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout5">
+                <EditText android:editable="false" android:layout_height="80sp" android:textSize="30sp" android:layout_width="match_parent" android:layout_weight="1" android:id="@+id/pref_vmdfile_textedit" android:hint="Touch me and choose a vmd file!" android:singleLine="true"></EditText>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout3" android:orientation="vertical" android:paddingTop="10sp" android:layout_marginTop="20sp">
+            <CheckBox android:layout_width="wrap_content" android:id="@+id/pref_vbo_chk" android:layout_height="wrap_content" android:textSize="30sp" android:text="Fast Render Mode (Enable VBO)"></CheckBox>
+            <CheckBox android:layout_width="wrap_content" android:text="Set Scale" android:layout_height="wrap_content" android:id="@+id/pref_scale_chk" android:textSize="30sp"></CheckBox>
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout7">
+                <TextView android:text="Model Scale" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_height="wrap_content" android:textSize="30sp"></TextView>
+                <TextView android:text="  X  " android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/textView4" android:layout_height="wrap_content" android:textSize="30sp"></TextView>
+                <TextView android:text="1" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/pref_scale_text" android:layout_height="wrap_content" android:textSize="30sp"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout6">
+                <SeekBar android:layout_height="wrap_content" android:id="@+id/pref_scale_seekbar" android:layout_width="match_parent" android:layout_weight="1"></SeekBar>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout10" android:layout_width="match_parent" android:orientation="vertical" android:layout_marginTop="20sp">
+            <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/textView5" android:text="Preview Resolution" android:textSize="30sp"></TextView>
+            <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/pref_select_resolution"></Spinner>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="right" android:layout_marginTop="20sp">
+            <Button android:text="Accept" android:layout_height="wrap_content" android:id="@+id/pref_accept" android:layout_width="wrap_content" android:width="200sp" android:height="80sp" android:textSize="30sp"></Button>
+            <Button android:text="Cancel" android:layout_height="wrap_content" android:id="@+id/pref_cancel" android:layout_width="wrap_content" android:width="200sp" android:height="80sp" android:textSize="30sp"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

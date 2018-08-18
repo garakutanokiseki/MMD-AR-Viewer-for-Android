@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.gr.java_conf.ka_ka_xyz" android:versionName="1.0.1.2" android:versionCode="1012">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:hardwareAccelerated="true" android:configChanges="keyboardHidden" android:vmSafeMode="false" android:largeHeap="true" android:debuggable="false">
+        <activity android:name="jp.gr.java_conf.ka_ka_xyz.activities.MmdARoidPreferences">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="jp.gr.java_conf.ka_ka_xyz.activities.NyARToolkitAndroidActivity" android:screenOrientation="landscape"/>
+        <activity android:name="jp.gr.java_conf.ka_ka_xyz.activities.AboutActivity"/>
+        <activity android:name="jp.gr.java_conf.ka_ka_xyz.activities.LicenseActivity"/>
+        <activity android:name="com.lamerman.FileDialog"/>
+    </application>
+<uses-permission xmlns:android="http://schemas.android.com/apk/res/android" android:name="android.permission.CAMERA"></uses-permission>
+<uses-permission xmlns:android="http://schemas.android.com/apk/res/android" android:name="android.permission.ACCESS_SURFACE_FLINGER"></uses-permission>
+<uses-permission xmlns:android="http://schemas.android.com/apk/res/android" android:name="android.permission.INTERNAL_SYSTEM_WINDOW"></uses-permission>
+<uses-permission xmlns:android="http://schemas.android.com/apk/res/android" android:name="android.permission.READ_FRAME_BUFFER"></uses-permission>
+<uses-permission xmlns:android="http://schemas.android.com/apk/res/android" android:name="android.permission.SET_ALWAYS_FINISH"></uses-permission>
+
+<uses-sdk android:minSdkVersion="10"></uses-sdk>
+</manifest> 

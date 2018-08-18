@@ -1,0 +1,10 @@
+
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:layout_width="match_parent" android:gravity="right" android:id="@+id/linearLayout3" android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="200sp" android:textSize="30sp" android:text="License" android:id="@+id/about_showlicBtn" android:height="80sp"></Button>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="200sp" android:textSize="30sp" android:text="Close" android:id="@+id/about_closeBtn" android:height="80sp"></Button>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:id="@+id/linearLayout2" android:layout_height="wrap_content">
+            <WebView android:id="@+id/about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fitsSystemWindows="false"></WebView>
+        </LinearLayout>
+    </LinearLayout>

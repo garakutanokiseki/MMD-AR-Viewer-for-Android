@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>about</title>
+  </head>
+  <body>
+    <h1>MMD-AR Viewer for Android ver 1.0.1.1</h1>
+    This document is written not in English but in Engrish. <br />
+    <br />
+    MMD-AR Viewer for Android is an AR (Augmented Reality) software
+    based on marker detection method. This software ovarlay
+    MikuMikuDance (MMD) Model object on the video camera image.<br />
+    <h2>Environment Information<br />
+    </h2>
+    Android Tablets  (Tegra2 CPU or higher one) or higher.<br />
+    Perhaps this software should not work on smartphone devices due to
+    requiring very heavy processing.<br />
+    <h3>Develop and Test Enviroment<br />
+    </h3>
+    Eee Pad Transformer TF101<br />
+    <h2>How to Use<br />
+    </h2>
+    <ol>
+      <li>Before install this software, Download AR marker image from
+        developer's site (here) and print out it on paper.<br />
+      </li>
+      <li>Copy MMD model files (*pmd and texture files) and motion files
+        (*vmd) in Android storage or SD card. <br />
+      </li>
+      <li>Install MMD-AR Viewer and start.</li>
+      <li>When you start MMD-AR in first time, configuration dialog
+        would be displayed, choose a MMD model data file (*.pmd) and a
+        Motion Data File (*.vmd)<br />
+        (You can call configuration later. Tap "Configuration" button
+        from menu.)<br />
+      </li>
+      <li>Tap "Accept" button after choosing files, then main view would
+        be displayed.<br />
+      </li>
+      <li>Camera preview is displayed on main view. When you look at AR
+        marker, MMD object CG would be displayed and overlay on preview
+        image.<br />
+      </li>
+    </ol>
+    <h2>Developer's Site<br />
+    </h2>
+    "MMD-AR Viewer for Android" Developer's site.<br />
+    <br />
+    URL: <a href="http://sourceforge.jp/projects/mmd-ar-vwr-andr/">http://sourceforge.jp/projects/mmd-ar-vwr-andr/</a><br />
+    <br />
+    get latest source code and information about MMD-AR Viewer.<br />
+    <br />
+    <h2>Available MMD Data File<br />
+    </h2>
+    <ul>
+      <li>MikuMikuDance Model Data shipped with MikuMikuDance is
+        confirmed to display.<br />
+      </li>
+      <li>MMD data using <a href="http://www6.atwiki.jp/vpvpwiki/pages/216.html">
+          ShpereMap function</a> (use texture files just like *.spa or
+        *.sph) is available but rendered as a normal texture.<br />
+      </li>
+    </ul>
+    <h2>Library and Tools<br />
+    </h2>
+    <ul>
+      <li><a href="http://sourceforge.jp/projects/nyartoolkit-and/" checked="true">NyARToolkit
+
+
+
+          for Android</a><br />
+        NyARToolkit implementation work on Android OS.（distributed under
+        Apache Software License, 2.0）</li>
+      <li><a href="http://code.google.com/p/nymmd/">nymmd</a><br />
+        MikuMikuDance play library implemented using OpenGL （distributed
+        under GNU GPL v2 License&gt;</li>
+      <li><a href="http://code.google.com/p/android-file-dialog/">Android
+
+
+
+
+          File Dialog</a><br />
+        Android File Dialog implementation （distributed under New BSD
+        License）</li>
+      <li><a href="http://www.defaulticon.com/">defaulticon</a><br />
+        Free icon images （distributed under  <a href="http://creativecommons.org/licenses/by-nd/3.0/">Creative
+
+
+
+
+          Commons Attribution-No Derivative Works 3.0 )<br />
+        </a></li>
+      <li><a style="color: rgb(75, 79, 87); " href="http://flash.tarotaro.org/ar/MarkerGeneratorOnline.html">ARToolKit
+
+
+
+          Marker Generator Online</a><br />
+        ARToolKit Generator web service.<br />
+      </li>
+    </ul>
+    <h2>Limitation</h2>
+    <ul>
+      <li>After resumed from sleep mode, preview image freezes. When
+        this phenomenon happened, choose "Settings" from menu and back
+        to main view to recover.<br />
+      </li>
+      <li>When texture image size is not normalized （ex: 256 pix X 256
+        pix）, Such a texture image is resized. <br />
+      </li>
+      <li>PMX model data file (*.pmx) is not available.<br />
+      </li>
+      <li>MMD data using <a href="http://www6.atwiki.jp/vpvpwiki/pages/216.html">
+          SphereMap function</a> (use texture files just like *.spa or
+        *.sph) is available but rendered not as a sphereMap texture but as a normal texture.</li>
+      <li>Collision Detection and Physics is unavailable.<br />
+      </li>
+      <li>Refresh rate depends on many factors such as the length of motion data, the complexity of model data and the preference of preview resolution.
+      </li>
+    </ul>
+    <h2>Planned Improvements<br />
+    </h2>
+    <ul>
+      <li>Recording function.<br />
+      </li>
+      <li>Display smoothly (If possible).
+        <li>Improve error handling.<br />
+        </li>
+      </li>
+    </ul>
+    <h2>License</h2>
+    <span style="text-decoration: underline;">MMD AR Viewer is
+      distributed under </span><a href="http://www.gnu.org/copyleft/gpl.html">GNU
+
+
+      GPL v3</a>. Click "License" button and see details.<br />
+    <br />
+  </body>
+</html>
