@@ -1,22 +1,12 @@
 package jp.gr.java_conf.ka_ka_xyz.activities;
 
-import java.io.File;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
-import com.android.camera.CameraHardwareException;
-import com.android.camera.CameraHolder;
-import com.lamerman.FileDialog;
-
-import jp.gr.java_conf.ka_ka_xyz.R;
-import jp.gr.java_conf.ka_ka_xyz.util.PreferenceUtils;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.hardware.Camera;
 import android.hardware.Camera.Size;
 import android.os.Bundle;
+import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.AdapterView;
@@ -30,6 +20,18 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.android.camera.CameraHardwareException;
+import com.android.camera.CameraHolder;
+import com.lamerman.FileDialog;
+
+import java.io.File;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import jp.gr.java_conf.ka_ka_xyz.R;
+import jp.gr.java_conf.ka_ka_xyz.util.PreferenceUtils;
 
 public class MmdARoidPreferences extends Activity {
 
@@ -119,7 +121,7 @@ public class MmdARoidPreferences extends Activity {
 				Intent intent = new Intent(MmdARoidPreferences.this,
 						FileDialog.class);
 				if (initPmdPath == null || "".equals(initPmdPath)) {
-					intent.putExtra(FileDialog.START_PATH, "/");
+					intent.putExtra(FileDialog.START_PATH, Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS) + "/");
 				} else {
 					intent.putExtra(FileDialog.START_PATH, initPmdDir);
 				}
@@ -158,7 +160,7 @@ public class MmdARoidPreferences extends Activity {
 		} else if (vmd.isDirectory()) {
 			initVmdDir = vmd.getAbsolutePath();
 		} else {
-			initVmdDir = "/";
+			initVmdDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS) + "/";
 		}
 
 		vmdPath.setText(initVmdPath);
@@ -168,7 +170,7 @@ public class MmdARoidPreferences extends Activity {
 				Intent intent = new Intent(MmdARoidPreferences.this,
 						FileDialog.class);
 				if (initVmdPath == null || "".equals(initVmdPath)) {
-					intent.putExtra(FileDialog.START_PATH, "/");
+					intent.putExtra(FileDialog.START_PATH, Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS) + "/");
 				} else {
 					intent.putExtra(FileDialog.START_PATH, initVmdDir);
 				}
